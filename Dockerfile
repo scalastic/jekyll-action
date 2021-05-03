@@ -14,6 +14,8 @@ RUN apk add --update curl
 # debug
 RUN bundle version
 RUN ulimit -a
+RUN ulimit -s 16384
+RUN ulimit -a
 
 COPY LICENSE README.md /
 
